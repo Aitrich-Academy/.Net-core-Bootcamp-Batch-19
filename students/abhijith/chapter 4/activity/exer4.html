@@ -1,0 +1,81 @@
+<html>
+<body>
+    
+  <!-- 1 activity -->
+  <form action="/action_page.php">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Gmail:</label><br>
+        <input type="gmail" id="lname" name="lname" value=""><br><br>
+        <textarea rows="4" cols="50" name="comment" form="usrform">
+          Enter text here...</textarea><br>
+        <input type="submit" value="Submit">
+
+ <!-- 2  radio -->
+
+
+        <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  
+
+
+
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+
+</form>
+
+
+<form>
+
+<h1>Pizza ordering</h1>
+<form action="/submit-order" method="post">
+  <label for="size">Select Pizza Size:</label>
+  <select id="size" name="size" required>
+      <option value="">--Choose a size--</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+  </select>
+  <br><br>
+  <label for="crust">Select Crust Type:</label>
+  <select id="crust" name="crust" required>
+      <option value="">--Choose a crust--</option>
+      <option value="thin">Thin</option>
+      <option value="thick">Thick</option>
+      <option value="stuffed">Stuffed</option>
+      <option value="gluten-free">Gluten-Free</option>
+  </select>
+  <br><br>
+  <label for="toppings">Select Toppings:</label>
+  <select id="toppings" name="toppings[]" multiple size="4">
+      <option value="pepperoni">Pepperoni</option>
+      <option value="mushrooms">Mushrooms</option>
+      <option value="onions">Onions</option>
+      <option value="sausage">Sausage</option>
+      <option value="bacon">Bacon</option>
+      <option value="extra-cheese">Extra Cheese</option>
+      <option value="black-olives">Black Olives</option>
+      <option value="green-peppers">Green Peppers</option>
+  </select>
+  <br><br>
+  
+  <label for="comments">Additional Instructions:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any special requests here..."></textarea>
+  <br><br>
+  
+  <button type="submit">Order Pizza</button>
+</form>
+
+      
+</body>
+</html>
