@@ -1,0 +1,13 @@
+.footer
+    {
+        position: absolute;
+        margin-top: 1460px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        padding: 100px;
+    }
+    .iframe{
+        margin-top: 40px;
+        margin-left: 400px;
+        margin-bottom: 30px;
+    }
