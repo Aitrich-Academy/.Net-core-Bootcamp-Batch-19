@@ -1,0 +1,18 @@
+.platform_admin{background-color:#049204;width: max-content;}
+.Job_provider{background-color: red;width: max-content;}
+.Job_seeker{background-color: yellow;max-width: max-content;}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;}
+    .inner-image{
+        position: relative;
+      }
+      
+      .inner-image {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+      }
+  

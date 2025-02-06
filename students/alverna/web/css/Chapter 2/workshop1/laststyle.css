@@ -1,0 +1,35 @@
+.rightmostside{
+    position: absolute;
+   margin-top: -620px;
+   
+   
+   
+}
+.box{
+    width: 200px;
+    height: 80px;
+    border color: grey;
+    border-radius: 50px;
+    box-shadow:30px;
+        /* background-color: black;
+        box-shadow: 10px ; */
+      }
+
+
+    .second{
+    
+    margin-top: -80px;
+    margin-bottom: 103px;
+    margin-right: 75px;
+    margin-left: 257px;
+}
+.third{
+    margin-top: -76px;
+    margin-bottom: 98px;
+    
+    margin-left: 144px;
+}  
+    
+
+
+    
