@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar {
+            width: 25%;
+            height: 100%;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sidebar h3 {
+            text-align: center; /* Center the text initially */
+            margin-bottom: 20;
+            display: inline-block; /* Ensure the element is only as wide as its content */
+            white-space: nowrap; /* Prevent text from wrapping */
+            animation: moveLeftToRight 6s linear infinite; /* Adjust duration as needed */
+        }
+        
+        @keyframes moveLeftToRight {
+            0% {
+                transform: translateX(-100%); /* Start from the left */
+            }
+            100% {
+                transform: translateX(100%); /* Move to the right */
+            }
+        }
+
+        .sidebar dl {
+            list-style-type: none;
+        }
+
+        .sidebar dt {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .sidebar dt:hover {
+            background-color: #04AA6D;
+        }
+
+        .sidebar img {
+            margin-right: 10px;
+        }
+
+        .Mainmenu {
+            width: 75%;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .formstr {
+            background-color: white;
+            border-radius: 15px;
+            width: 50%;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+        }
+
+        .formstr hr {
+            margin-bottom: 20px;
+        }
+
+        .formstr label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            text-align: left;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .formstr input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .formstr input[type="text"]:focus {
+            border-color: #04AA6D;
+            outline: none;
+            box-shadow: 0px 0px 5px rgba(4, 170, 109, 0.5);
+        }
+
+        .radio-group {
+            margin: 10px 0;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttons {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .buttons:hover {
+            background-color: #038d5a;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .formstr {
+                width: 90%;
+                padding: 15px;
+            }
+
+            .buttons {
+                width: 100%;
+            }
+
+            .sidebar {
+                width: 30%;
+            }
+
+            .Mainmenu {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h3>Hire Me Now</h3>
+        <dl>
+            <dt><div class="jobs"><img src="./image/Group 1 (13).png" width="20px" height="20px">Jobs</div></dt>
+            <dt><div class="application"><img src="./image/Group 1 (12).png" width="20px" height="20px">Application</div></dt>
+            <dt><div class="interview"><img src="./image/Group 1 (14).png" width="20px" height="20px">Interview</div></dt>
+            <dt><div class="message"><img src="./image/Group 1 (5).png" width="20px" height="20px">Message</div></dt>
+            <dt><div class="settings"><img src="./image/Group 1 (6).png" width="20px" height="20px">Settings</div></dt>
+        </dl>
+    </div>
+
+    <div class="Mainmenu">
+        <div class="nav">
+            <img src="./image/Group 1 (11).png" height="20px" width="20px">
+            <img src="./download.jpg" height="20px" width="20px"> Oliva
+        </div>
+
+        <div class="formstr">
+            <h2>Post a Job</h2>
+            <hr>
+            <form action="/action_page.php">
+                <label for="job_title">Job Title</label>
+                <input type="text" id="job_title" name="job_title" placeholder="Enter job title">
+
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Enter description">
+
+                <label for="salary">Salary</label>
+                <input type="text" id="salary" name="salary" placeholder="Enter salary">
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+
+                <div class="radio-group">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label>
+                </div>
+
+                <button class="buttons">Send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container2 h2{
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        body{
+            background-color: pink;
+        }
+        .header {
+            text-align: center;
+            background-color: rgb(228, 84, 132);
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            
+        }
+        .header h1{
+            animation-name: bounce;
+            
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(30px); } /* Moves down */
+            100% { transform: translateY(0); } /* Moves back up */
+        }
+        
+        .nav{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(228, 84, 132);;
+}
+.gallery:hover{
+background-color: aliceblue;
+color: black;
+border: 2px;
+border-radius: 30px;
+}
+ .activities:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 2px;
+    border-radius: 30px;
+    }
+    .contact:hover{
+        background-color: aliceblue;
+        color: black;
+        border: 2px;
+        border-radius: 30px;
+        }
+        .about:hover{
+            background-color: aliceblue;
+            color: black;
+            border: 2px;
+            border-radius: 30px;
+            }
+            .container2{
+                text-align: center;
+                box-shadow: 50px;
+                background-color: antiquewhite;
+               height: auto;
+               width: auto;
+                box-sizing: border-box;
+                transition: tranform .2s;
+            }
+            .container2:hover{
+                transform: scale(1,1.1);
+            }
+            .gallery{
+                display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+            }
+            .yellow{
+                background-color: rgb(212, 226, 11);
+                width: 30px;
+                transition: tranform .2s;
+                padding: 50px;
+                margin: 20px;
+                border-radius: 2px;
+            }.yellow:hover{
+                transform: scale(1.2);
+            }
+            .red{
+                background-color: rgb(226, 11, 11);
+                width: 30px;
+                transition: tranform .2s;
+                padding: 50px;
+                border-radius: 2px;
+                margin: 20px;}
+                .red:hover{
+                    transform: scale(1.2);
+                }
+                .green{
+                    
+                background-color: rgb(61, 226, 11);
+                width: 30px;
+                border-radius: 12px;
+                padding: 50px;
+                margin: 20px;
+                transition: tranform .2s;
+                }
+                .green:hover{
+                    transform: scale(1.2);
+                }
+                .blue{
+                    border-radius: 12px;
+                background-color: rgb(11, 165, 226);
+                width: 30px;
+                transition: tranform .2s;
+                padding: 50px;
+                margin: 20px;
+                }.blue:hover{
+                    transform: scale(1.2);
+                }
+                .purple{
+                    border-radius: 12px;
+                background-color: rgb(158, 11, 226);
+                width: 30px;
+                transition: tranform .2s;
+                padding: 50px;
+                margin: 20px;
+                }.purple:hover{
+                    transform: scale(1.2);
+                }
+                .container3{
+                text-align: center;
+                }
+                .arts{
+                width: 100%;
+                height: 30px;
+                background-color: rgb(255, 238, 0);    
+               
+               animation: shake .2s  infinite linear ;
+               transition: transfrom 0.2s ease-in-out ;
+            }
+            @keyframes shake {
+                0%{transform: translate(0,0);}
+                25%{transform: translate(1px,1px);}
+                50%{transform: translate(-1px,-1px);}
+                75%{transform: translate(1px,1px);}
+                100%{transform: translate(0px,0px);}
+            }
+                .music{
+                width: 100%;
+                height: 30px;
+                background-color: rgba(245, 241, 5, 0.979);    
+               
+               animation: shake .2s  infinite linear ;
+               transition: transfrom 0.2s ease-in-out ;
+            }
+            @keyframes shake {
+                0%{transform: translate(0,0);}
+                25%{transform: translate(1px,1px);}
+                50%{transform: translate(-1px,-1px);}
+                75%{transform: translate(1px,1px);}
+                100%{transform: translate(0px,0px);}
+            }.parties{
+                width: 100%;
+                height: 30px;
+                background-color: rgba(245, 241, 5, 0.979);    
+               
+               animation: shake .2s  infinite linear ;
+               transition: transfrom 0.2s ease-in-out ;
+            }
+            @keyframes shake {
+                0%{transform: translate(0,0);}
+                25%{transform: translate(1px,1px);}
+                50%{transform: translate(-1px,-1px);}
+                75%{transform: translate(1px,1px);}
+                100%{transform: translate(0px,0px);}
+            }.juggling{
+                width: 100%;
+                height: 30px;
+                background-color: rgba(245, 241, 5, 0.979);    
+               
+               animation: shake .2s  infinite linear ;
+               transition: transfrom 0.2s ease-in-out ;
+            }
+            @keyframes shake {
+                0%{transform: translate(0,0);}
+                25%{transform: translate(1px,1px);}
+                50%{transform: translate(-1px,-1px);}
+                75%{transform: translate(1px,1px);}
+                100%{transform: translate(0px,0px);}
+            }
+            .centre{
+             display: flex;
+                align-items: center;
+                justify-content: center;
+    background-color: aliceblue;
+            }
+            .containor4{
+            display: block;
+            width: 85%;
+            height: 300px;
+            }
+            .name input{
+                width: 100%;
+                height: 20px;
+                padding: 7px;
+            }
+            .mess input{
+                width: 100%;
+                height: 20px;
+                padding: 7px;
+            }
+            .name label{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: large;
+            }
+            .mess label{
+                
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: large;
+                }
+                .button{
+                    border-radius: 20px;
+                    background-color: rgb(21, 226, 65);
+                    height: 30px;
+                    padding: 5px;
+                    width: 100%;
+                    border-color: rgb(21, 226, 65);
+                }
+                .button:hover{
+                    background-color: aqua;
+                }
+                .footer{
+                    background-color: gray;
+                    width: 100%;
+                    height: 70px;
+                }
+            
+   </style>
+<div class="header">
+<h1>Welocme to playful wonderland</h1>
+<br><br>
+</div>
+<div class="nav">
+<div class="about"><h3>About</h3></div>
+<div class="contact"><h3>Contact</h3></div>
+<div class="activities"><h3>Activities</h3></div>
+<div class="gallery"><h3>Gallery</h3></div>
+</div>
+<br> 
+<div class="container2">
+    <br><br>
+    <h2 style="align-items: center;">about us </h2>
+    <p>gfgui  ui efyuertwetyoi wet oi yoi wet o wet o weteo wer  gui we </p>
+<br>
+</div>
+<br>
+
+    <h1 style="text-align: center;">Gallery</h1>
+    <div class="gallery">
+        <div class="blue">blue</div>
+        <div class="red">red</div>
+        <div class="green">green</div>
+        <div class="purple">purple</div>
+        <div class="yellow">yellow</div>
+    </div>
+<div class="containor3">
+    <h2 style="text-align: center;">Fun activitys</h2>
+<div class="funact"></div>
+<div class="arts"><img src="./360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" width="20px" height="20px"> Arts workshop</div><br>
+<div class="music"><img src="./360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" width="20px" height="20px">Music Jamming Sessions</div><br>
+<div class="juggling"><img src="./360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" width="20px" height="20px">Juggling Preforms</div><br>
+<div class="parties"><img src="./360_F_111869553_04OBDskYYU5r0b9PW3cfKfD3fkxlfAzW.jpg" width="20px" height="20px">Themed parties</div>
+
+</div>
+<div class="centre">
+<div class="containor4">
+<h2 style="text-align: center;"> Contant us</h2>
+<form >
+    <div class="name">
+        <label for="name">Name</label>
+        <input id="text" type="name" name="name">
+        <br>
+    </div>
+    <div class="name">
+     <label for="name">Email</label>
+    <input id="text" type="name" name="name">
+</div><br>
+<div class="mess">
+    <label for="name">Message</label>
+    <input id="text" type="name" name="name">
+</div>
+
+</form>
+<br><br>
+<button class="button">Send Message</button>
+</div>
+</div>
+<br><br>
+<div class="footer">
+    <p style="text-align: center;">alll copyrigth in 2024</p>
+</div>
+</body>
+</html>
